@@ -119,7 +119,8 @@ monogatari.characters({
     name: '김성민',
     color: '#9491fd',
     sprites: {
-      normal: 'main_sungmin.png',
+      left: 'main_sungmin.png',
+      right: 'right_sungmin.png',
     },
   },
   uj: {
@@ -184,7 +185,7 @@ monogatari.script({
   ],
 
   Yes1: [
-    'show character sung scream',
+    'show character sung scream with fadeIn',
     'sung 지금출발하면 늦진 않을거거든!',
     '(그녀는 순식간에 준비를 마치더니 식빵 한 조각을 물고 뛰쳐나갔다)',
     '쾅!',
@@ -192,7 +193,7 @@ monogatari.script({
   ],
 
   No1: [
-    'show character sung scream',
+    'show character sung scream with fadeIn',
     'sung 알고있거든!',
     '(그녀는 순식간에 준비를 마치더니 식빵 한 조각을 물고 뛰쳐나갔다)',
     '쾅!',
@@ -202,7 +203,9 @@ monogatari.script({
   ep1Scene2: [
     'show scene url("assets/scenes/room_morning_memory.png")',
     '약 1년 전.',
+    'show image e_world_truck.png center with fadeIn',
     '횡단보도를 건너던 나는 신호위반 트럭에 치여 의식불명 상태가 되었다.',
+    'hide image e_world_truck.png with fadeOut',
     '그런데 어째서인지 내 의식은 유령이 된것 처럼 돌아다닐 수 있게 된 상태였고, 나는 병원을 돌아다니다 목디스크로 입원한 대학생 성이름을 만났다.',
     '그녀는 병원 안에서 유일하게 나를 볼 수 있고 대화가 되는 사람이었다.',
     '의외로 빠르게 친해진 덕분에 그녀에게로부터 많은 이야기를 듣게 되었다.',
@@ -218,7 +221,9 @@ monogatari.script({
     'show scene url("assets/scenes/company_morning.png")',
     '오전 8:52',
     '(조금 많이 늦긴 했지만.. 다행히 지각은 면했네)',
+    'show character sung tired at left',
     'sung 하아.. 아슬아슬했어..',
+    'show character kim right at right',
     'kim 성이름씨. 곧 회의 시작합니다. 얼른 들어오세요.',
     'sung 네 팀장님..!',
     '그녀는 서둘러 회의실로 들어갔다.',
