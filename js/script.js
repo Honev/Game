@@ -72,14 +72,14 @@ monogatari.characters({
     },
   },
 
-  hyeonwoo: {
+  lee: {
     name: '이현우',
     color: '#4360fb',
     sprites: {
       normal: 'main_hyeonwoo.png',
     },
   },
-  jihyeon: {
+  jh: {
     name: '김지현',
     color: '#6dff96',
     sprites: {
@@ -224,13 +224,13 @@ monogatari.script({
     '(조금 많이 늦긴 했지만.. 다행히 지각은 면했네)',
     'show character sung tired at left',
     'sung 하아.. 아슬아슬했어..',
-    'hide character sung tired at left with fadeOut',
+    'hide character sung with fadeOut',
     'show character kim right at right',
     'kim 성이름씨. 곧 회의 시작합니다. 얼른 들어오세요.',
-    'hide character kim right at right with fadeOut',
+    'hide character kim with fadeOut',
     'show character sung happy at left',
     'sung 네 팀장님..!',
-    'hide character sung happy at left with fadeOut',
+    'hide character sung with fadeOut',
     '그녀는 서둘러 회의실로 들어갔다.',
     'jump ep1Scene4',
   ],
@@ -238,7 +238,7 @@ monogatari.script({
   ep1Scene4: [
     'show scene url("assets/scenes/office_morning.png")',
     '(회의실에는 1팀과 2팀 사람들이 모두 모여있었다.)',
-    'show character kim left at right',
+    'show character kim left at left with fadeIn',
     'kim 좋은 아침입니다.',
     'jung 아, 팀장님 오셨어요!',
     'kim 이쪽은 오늘부터 2팀에서 근무할 성이름씨입니다. 면접때 보신 분도 있을거에요.',
@@ -246,7 +246,7 @@ monogatari.script({
     '짝짝짝',
     'kim 이름씨는 저기 지현씨 옆에 앉으면 됩니다.',
     'sung 넵!',
-    'jihyeon 반가워요! 전 김지현, 2팀 디자이너에요. 팀 소개는 회의 끝나고 하도록 할게요.',
+    'jh 반가워요! 전 김지현, 2팀 디자이너에요. 팀 소개는 회의 끝나고 하도록 할게요.',
     'sung 넵!',
     'kim 그럼 회의를 시작하죠.',
     'kim 첫번째 사안은 A사에서 새로 선보이는 고양이 간식 브랜딩입니다.',
@@ -279,10 +279,11 @@ monogatari.script({
   ],
 
   Yes2: [
+    'show scene url("assets/scenes/office_morning.png")',
     'sung 고양이가 좋아하는 츄르는 어떨까요?',
     'uj ?',
     'sung ?',
-    'jihyeon 말이 안되는건 아닌데 너무 무난한것같네요.',
+    'jh 말이 안되는건 아닌데 너무 무난한것같네요.',
     'sung 그런가요..',
     'uj 처음엔 장난인줄 알았어요.',
     'sung 죄송합니다...',
@@ -291,6 +292,7 @@ monogatari.script({
   ],
 
   No2: [
+    'show scene url("assets/scenes/office_morning.png")',
     'sung The 건강한 츄르는 어떨까요?',
     'jung The 건강한이라는 말은 어디서 들어본것 같은데요?',
     'sung 물건이나 기능을 직접적으로 설명하는 단어는 브랜드 이름에 누구나 자유롭게 사용할 수 있다고 알고있습니다.',
@@ -306,7 +308,75 @@ monogatari.script({
     'jump ep1Scene5',
   ],
 
-  ep1Scene5: [],
+  ep1Scene5: [
+    '잠시 후',
+    'show character kim left at left with fadeIn',
+    'kim 고양이 간식은 이쯤하고 패션브랜드 얘기를 해보죠.',
+    'hide character kim with fadeOut',
+    'show character park normal at right with fadeIn',
+    'park 자료를 읽어보니 클라이언트가 브랜드 컨셉을 보면 하이앤드 느낌의 가성비 브랜드로 백화점 내에서 독자적인 위치를 원하는것 같군요. ',
+    'park 꽤나 고난도의 작업이 될 것 같은데 앞 프로젝트와 동시 진행이 가능할까요?',
+    'hide character park with fadeOut',
+    // 'show character somin normal at right', -- park+somin img
+    'somin 올해 초에 했던거 생각하면 가능할 것 같긴 해요.',
+    'park 그렇군요.',
+    'somin 음.. 그나저나 B사에서는 ZARA나 H&M 정도의 느낌을 원하는게 아닐까요?',
+    'park 확실히. ‘ZARA’정도의 퀄리티에 가격대면 소비자들도 합리적인 소비라고 느낄 수 있겠네요.',
+    'jh 그럼 저희도 ZARA나 H&M처럼 심플한 네이밍으로 가보는건 어때요?',
+    '그녀의 시선이 이름에게로 꽂혔다.',
+    '그녀는...',
+    {
+      Choice: {
+        Dialog: '',
+        Yes: {
+          Text: '고개를 끄덕인다.',
+          Do: 'jump Yes3',
+        },
+        No: {
+          Text: '좋아요!',
+          Do: 'jump No3',
+        },
+      },
+    },
+  ],
+
+  Yes3: ['show character sung happy', 'sung (끄덕끄덕끄덕)', 'jump ep1Scene6'],
+
+  No3: ['show character sung happy', 'sung 좋아요!', 'jump ep1Scene6'],
+
+  ep1Scene6: [
+    'show character lee',
+    'lee 하이엔드 브랜드중에 유독 ‘메종’이라는 단어가 붙은 브랜드가 많던데 저희도 사용해보는건 어떨까요?',
+    // 'somin 그거 아무나 써도 되는거에요?', --lee+somin img
+    'somin 그거 아무나 써도 되는거에요?',
+    'lee 그건.. 잘 모르겠네요.',
+    'show scene url("assets/scenes/office_talking.png")',
+    '(이건.. 내가 도움을 줄 수 있겠는데?)',
+    '(야. 성이름!)',
+    'show scene url("assets/scenes/office_morning.png")',
+    'show character sung surprised at left',
+    'sung 녜?!',
+    'uj ?',
+    'sung 아, 그.. 러니까..!',
+    'sung 그.. 메종이라는 단어 말인데요..!',
+    {
+      Choice: {
+        Dialog: '',
+        Yes: {
+          Text: '저작권에 문제가 된다.',
+          Do: 'jump Yes4',
+        },
+        No: {
+          Text: '저작권에 문제가 되지 않는다.',
+          Do: 'jump No4',
+        },
+      },
+    },
+  ],
+
+  Yes4: [],
+
+  No4: [],
 
   normalEnd01: [
     'show scene url("assets/scenes/office_morning.png")',
