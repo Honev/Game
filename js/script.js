@@ -219,6 +219,7 @@ monogatari.script({
 
   ep1Scene3: [
     'show scene url("assets/scenes/company_morning.png")',
+    '',
     '오전 8:52',
     '(조금 많이 늦긴 했지만.. 다행히 지각은 면했네)',
     'show character sung tired at left',
@@ -237,7 +238,7 @@ monogatari.script({
   ep1Scene4: [
     'show scene url("assets/scenes/office_morning.png")',
     '(회의실에는 1팀과 2팀 사람들이 모두 모여있었다.)',
-    'show character kim main at right',
+    'show character kim left at right',
     'kim 좋은 아침입니다.',
     'jung 아, 팀장님 오셨어요!',
     'kim 이쪽은 오늘부터 2팀에서 근무할 성이름씨입니다. 면접때 보신 분도 있을거에요.',
@@ -307,5 +308,23 @@ monogatari.script({
 
   ep1Scene5: [],
 
-  normalEnd01: [],
+  normalEnd01: [
+    'show scene url("assets/scenes/office_morning.png")',
+    '4시간 후',
+    'show character kim left at right',
+    'kim 응? 벌써 시간이 이렇게..',
+    'kim 밥먹고 이어서 합시다.',
+    'hide character kim left at right',
+    // '단체캐릭터 이미지',
+    '수고하셨습니다..',
+    'show scene url("assets/scenes/company_afternoon.png")',
+    '정신없이 하루가 지나갔다.',
+    '업무를 마친 그녀가 얼빠진 표정으로 사무실에서 걸어나왔다.',
+    'show character sung too_tired with fadeIn',
+    '디자인이 나랑 맞는걸까..',
+    'hide character sung too_tired with fadeOut',
+    'show scene url("assets/scenes/end.png") with fadeIn',
+    'Episode 01, Normal Ending, 행복 끝 고생 시작',
+    'end',
+  ],
 });
