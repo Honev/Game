@@ -9,6 +9,13 @@ monogatari.action('message').messages({
 			<p>‘The 건강한’과 '소화가 잘 되는'이라는 단어는 제품의 기능을 설명하는 역할을 하는 단어이기 때문에 특정 사업자가 독점할 수 없습니다.</p>
 		`,
   },
+  Help2: {
+    title: '지적재산권 TMI 02',
+    subtitle: '메종',
+    body: `
+			<p>‘메종'이라는 단어는 업계에서 널리 쓰이는 단어이기 때문에 특정 사업자가 독점할 수 없습니다.</p>
+		`,
+  },
 });
 
 // Define the notifications used in the game
@@ -374,9 +381,30 @@ monogatari.script({
     },
   ],
 
-  Yes4: [],
+  Yes4: [
+    'sung 저작권에 문제가 되지 않을까요?',
+    'uj 메종은 프랑스어로 집이라는 뜻인데 오트쿠튀르 매장을 의미하기도 해요.',
+    'uj 업계에서 누구나 쓸 수 있어야 하는 단어라 저작권에 문제되진 않을거에요.',
+    'jh 어감도 괜찮고 고급 느낌을 주면서 가격경쟁력을 갖춘다면 다른 브랜드에 비해 빠르게 주목받을 수 있을것같네요.',
+    'sung 저도 좋은것같습니다.',
+    'show scene url("assets/scenes/office_talking.png")',
+    'sung ...',
+    'sung (조금 더 신중해야겠어..)',
+    'jump normalEnd01',
+  ],
 
-  No4: [],
+  No4: [
+    'sung 저작권 관련해서는 문제가 되지 않는걸로 알고있습니다.',
+    'jung 그래요? 이유가 있나요?',
+    'sung 네!',
+    'sung 각 분야에서 자주 쓰이는 단어는 어느 한 기업에서 독점할 수 없다고 알고있습니다. 그 분야에서 브랜드를 운영하는 사람은 누구나 그 단어를 쓸 수 있어야 하기 때문이죠.',
+    'show messege Help2',
+    'uj 설명 고마워요. 그럼 우선 메종은 킵 해두는걸로 할까요?',
+    'jung 좋은 것 같아요.',
+    'sung ',
+    'sung (힛)',
+    'jump goodEnd01',
+  ],
 
   normalEnd01: [
     'show scene url("assets/scenes/office_morning.png")',
@@ -393,8 +421,32 @@ monogatari.script({
     'show character sung too_tired with fadeIn',
     '디자인이 나랑 맞는걸까..',
     'hide character sung too_tired with fadeOut',
-    'show scene url("assets/scenes/end.png") with fadeIn',
+    '',
+    '',
     'Episode 01, Normal Ending, 행복 끝 고생 시작',
+    'show scene url("assets/scenes/end.png") with fadeIn',
+    'end',
+  ],
+
+  goodEnd01: [
+    '',
+    '2시간 후',
+    'kim 오늘 회의는 여기서 마치죠. 다들 수고많았어요.',
+    '수고하셨습니다',
+    'uj 아, 이름씨는 이따 오후에 잠깐 나좀 봐요.',
+    'sung 네? 네!',
+    'show scene url("assets/scenes/office room_afternoon.png") with fadeIn',
+    '',
+    'uj 아까 네이밍 설명할때 말한 내용은 어떻게 알게됐어요?',
+    'sung 아.. 제가 졸전 진행하면서 관련 공부를 좀 해서 알게되었습니다.',
+    '(좋아 적당히 잘 둘러댔군.)',
+    'uj 첫날부터 꽤 인상깊었어요. 앞으로도 잘해봅시다.',
+    'sung 네! 감사합니다 팀장님!',
+    'hide character sung too_tired with fadeOut',
+    '',
+    '',
+    'Episode 01, Good Ending, 디자이너로서의 첫 걸음',
+    'show scene url("assets/scenes/end.png") with fadeIn',
     'end',
   ],
 });
