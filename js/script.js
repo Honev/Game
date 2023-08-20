@@ -767,6 +767,7 @@ monogatari.script({
     'sung 그거 EBS에서 방영하는 프로그램 이름 이미 있어.',
     '(그...래? 몰랐네..)',
     'sung 됐다.. 피곤한데 잠이나 잘래.',
+    'hide character sung too_tired',
     '그녀는 침대에 몸을 던졌다.',
     'show scene url("assets/scenes/end.png") with fadeIn',
     '',
