@@ -23,6 +23,13 @@ monogatari.action('message').messages({
 			<p>저작권의 기한이 만료된 저작권은 누구나 사용할 수 있습니다.</p>
 		`,
   },
+  Tmi4: {
+    title: '지적재산권 TMI 04',
+    subtitle: '버려진 브랜드',
+    body: `
+			<p>버려진지 3년이 지난 브랜드는 누구나 사용할 수 있습니다. 버려진 브랜드를 찾아 내 것으로 만들어보세요!</p>
+		`,
+  },
 });
 
 // Define the notifications used in the game
@@ -82,6 +89,7 @@ monogatari.characters({
       happy_tired: 'happy_tired_jhondo.png',
       too_tired: 'too_tired_jhondo.png',
       smile: 'smile_jhondo.png',
+      very_surprised: 'very_surprised_jhondo.png',
     },
   },
 
@@ -627,7 +635,7 @@ monogatari.script({
         Dialog: '',
         Yes: {
           Text: '다음에 하자.',
-          Do: 'jump Yes6',
+          Do: 'jump normalEnd02_1',
         },
         No: {
           Text: '퇴근하고 확인해보자.',
@@ -637,7 +645,150 @@ monogatari.script({
     },
   ],
 
-  Yes6: [],
+  normalEnd02_1: [
+    'show character sung happy',
+    'sung 지금 프로젝트 하는것도 바빠. 다음에 하자.',
+    'hide character sung happy',
+    'show scene url("assets/scenes/company_afternoon.png") witn fadeIn',
+    '정신없는 하루가 지나고..',
+    '퇴근시간이 꽤 지나서야 업무를 마친 그녀는 지친 얼굴로 짐을 챙겼다.',
+    'show character sung happy_tired',
+    'sung 팀장님 퇴근하시나요?',
+    'uj 나는 조금만 이따 갈려고요. 먼저 퇴근해요.',
+    'sung 넵! 다음주에 뵙겠습니다!',
+    'hide character sung happy_tired',
+    '',
+    '',
+    'Episode 02, Normal Ending, 고단한 하루',
+    'show scene url("assets/scenes/end.png") with fadeIn',
+    'end',
+  ],
 
-  No6: [],
+  No6: [
+    'show character sung happy',
+    'sung 퇴근하고 확인해보자.',
+    'jump ep2Scene5',
+  ],
+
+  ep2Scene5: [
+    'show scene url("assets/scenes/company_afternoon.png") witn fadeIn',
+    '정신없는 하루가 지나고..',
+    '퇴근시간이 꽤 지나서야 업무를 마친 그녀는 지친 얼굴로 짐을 챙겼다.',
+    'show character sung happy_tired',
+    'sung 팀장님 퇴근하시나요?',
+    'uj 나는 조금만 이따 갈려고요. 먼저 퇴근해요.',
+    'sung 넵! 다음주에 뵙겠습니다!',
+    'show scene url("assets/scenes/end.png") with fadeIn',
+    'show scene url("assets/scenes/room_night.png") with fadeIn',
+    '머리를 대충 말린 그녀가 책상앞에 앉았다.',
+    'show character sung happy',
+    'sung 하~ 이제 좀 살것같네.',
+    'sung 그럼 이제 투잡을 뛰어볼까?',
+    '의뢰 내용을 정리해보면 의뢰인은 서비스를 기획중인데 서비스와 어울리는 네이밍과 브랜딩 방향을 제시해 달라는 것이었다.',
+    'sung 그런데.. 이런 작업을 왜 나한테 의뢰한거지?',
+    '(의뢰비가 싸서..?)',
+    'show character sung happy',
+    'sung !',
+    'show character sung angry',
+    'sung ...성불하고싶어?',
+    '(죽고싶은 사람이 세상에 어디 있겠습니까 하핫..)',
+    'show character sung normal',
+    'sung 후.. 의뢰인이 기획중인 서비스는 반려동물 서비스같은데 적당한 이름이 뭐가있을까?',
+    '(애완동물 관련 서비스를 찾아보는건...)',
+    'show character sung scream',
+    '저기! 집중좀 하게 조용히좀 해줄래?',
+    '(넵...)',
+    'show character sung smile',
+    'sung 그치만 괜찮은 제안이었어 ㅎ',
+    '(???)',
+    'show scene url("assets/scenes/room_night_memory.png") with fadeIn',
+    '그 후로 몇시간이 흘렀지만 이렇다 할 아이디어가 떠오르지 않아 고통스러워 하는 그녀였다.',
+    'show character sung too_tired',
+    'sung 으.. 으으...',
+    '이대로 가다가는 주말 내내 잠만 퍼질러 자게 생겼다.',
+    '힌트를 주자.',
+    '(야. 이건 어때?)',
+    'sung ?',
+    {
+      Choice: {
+        Dialog: '',
+        Yes: {
+          Text: '펫플',
+          Do: 'jump Yes7',
+        },
+        No: {
+          Text: '야옹멍멍귀여워',
+          Do: 'jump normalEnd02_2',
+        },
+      },
+    },
+  ],
+
+  Yes7: [
+    '(펫플 어때?)',
+    'sung 펫플?',
+    'sung 그거 나 고딩때 망한 서비스 이름인데.',
+    '(그래서 말한거야.)',
+    '(버려진 브랜드는 3년이 지난 후에 누구나 사용할 수 있거든.)',
+    '(먼저 가져가는 사람이 임자가 되는거지.)',
+    'show messege Tmi4',
+    'sung 뭐? 정말?',
+    '(그럼 내가 거짓말하는거 봤어?)',
+    'show character sung happy_tired',
+    'sung 응!',
+    '(됐어 때려쳐.)',
+    'sung 헤헤 장난장난. 그럼 내일 좀 더 알아보고 오늘은 이만 자야겠다.',
+    'show character sung smile',
+    'sung 고마워 ㅎ',
+    '...',
+    '나는...',
+    {
+      Choice: {
+        Dialog: '',
+        Yes: {
+          Text: '잘자',
+          Do: 'jump goodEnd02_1',
+        },
+        No: {
+          Text: '그래',
+          Do: 'jump goodEnd02_2',
+        },
+      },
+    },
+  ],
+
+  normalEnd02_2: [
+    '(야옹멍멍귀여워)',
+    'sung ...',
+    '(...)',
+    '어쩐지 경멸의 시선이 느껴지는것 같다.',
+    'sung 에휴.',
+    '(아이디어가.. 안 떠오르는것 같아서..)',
+    'sung 그거 EBS에서 방영하는 프로그램 이름 이미 있어.',
+    '(그...래? 몰랐네..)',
+    'sung 됐다.. 피곤한데 잠이나 잘래.',
+    '그녀는 침대에 몸을 던졌다.',
+    'show scene url("assets/scenes/end.png") with fadeIn',
+    '',
+    'sung 잘자.',
+    '',
+    'Episode 02, Normal Ending, 고단한 하루',
+    'end',
+  ],
+
+  goodEnd02_1: [
+    '(..잘자)',
+    'sung 너도',
+    'show scene url("assets/scenes/end.png") with fadeIn',
+    'Episode 02, Good Ending, 꿈을 향해',
+    'end',
+  ],
+
+  goodEnd02_2: [
+    '(..그래)',
+    'sung (무뚝뚝하기는 ㅎ)',
+    'show scene url("assets/scenes/end.png") with fadeIn',
+    'Episode 02, Good Ending, 꿈을 향해',
+    'end',
+  ],
 });
