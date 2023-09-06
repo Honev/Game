@@ -96,6 +96,7 @@ monogatari.characters({
   lee: {
     name: '이현우',
     color: '#4360fb',
+    directory: 'hyeonwoo',
     sprites: {
       normal: 'main_hyeonwoo.png',
     },
@@ -103,6 +104,7 @@ monogatari.characters({
   jh: {
     name: '김지현',
     color: '#6dff96',
+    directory: 'jihyeon',
     sprites: {
       happy: 'smile_jihyeon.png',
       normal: 'main_jihyeon.png',
@@ -113,6 +115,7 @@ monogatari.characters({
   jung: {
     name: '정지영',
     color: '#ffa9fc',
+    directory: 'jiyoung',
     sprites: {
       happy: 'smile_jiyoung.png',
       normal: 'main_jiyoung.png',
@@ -121,6 +124,7 @@ monogatari.characters({
   park: {
     name: '박준호',
     color: '#fde591',
+    directory: 'junho',
     sprites: {
       normal: 'main_junjo.png',
     },
@@ -128,6 +132,7 @@ monogatari.characters({
   sm: {
     name: '최소민',
     color: '#fd91f9',
+    directory: 'somin',
     sprites: {
       angry: 'hot_somin.png',
       happy: 'smile_somin.png',
@@ -139,6 +144,7 @@ monogatari.characters({
   kim: {
     name: '김성민',
     color: '#9491fd',
+    directory: 'sungmin',
     sprites: {
       left: 'main_sungmin.png',
       right: 'right_sungmin.png',
@@ -147,6 +153,7 @@ monogatari.characters({
   uj: {
     name: '백유진',
     color: '#c791fd',
+    directory: 'yujin',
     sprites: {
       happy: 'smile_yujin.png',
       normal: 'main_yujin.png',
