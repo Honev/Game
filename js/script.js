@@ -252,8 +252,8 @@ monogatari.script({
     'hide character kim right at right',
     'show character sung happy at left',
     'sung 네 팀장님..!',
-    'hide character sung happy',
     '그녀는 서둘러 회의실로 들어갔다.',
+    'hide character sung happy',
     'jump ep1Scene4',
   ],
 
@@ -262,7 +262,7 @@ monogatari.script({
     '(회의실에는 1팀과 2팀 사람들이 모두 모여있었다.)',
     'show character kim left at left',
     'kim 좋은 아침입니다.',
-    'hide character kim left',
+    // 'hide character kim left',
     'jung 아, 팀장님 오셨어요!',
     'kim 이쪽은 오늘부터 2팀에서 근무할 성이름씨입니다. 면접때 보신 분도 있을거에요.',
     'sung 안녕하세요! 오늘부터 출근하게된 성이름입니다. 잘부탁드립니다!',
