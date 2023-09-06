@@ -215,6 +215,7 @@ monogatari.script({
 
   Yes1: [
     'show character sung scream with fadeIn',
+    '',
     'sung 지금출발하면 늦진 않을거거든!',
     '(그녀는 순식간에 준비를 마치더니 식빵 한 조각을 물고 뛰쳐나갔다)',
     '쾅!',
@@ -223,6 +224,7 @@ monogatari.script({
 
   No1: [
     'show character sung scream with fadeIn',
+    '',
     'sung 알고있거든!',
     '(그녀는 순식간에 준비를 마치더니 식빵 한 조각을 물고 뛰쳐나갔다)',
     '쾅!',
@@ -233,6 +235,7 @@ monogatari.script({
     'show scene url("assets/scenes/room_morning_memory.png")',
     '약 1년 전.',
     'show image e_world_truck.png center with fadeIn',
+    '',
     '횡단보도를 건너던 나는 신호위반 트럭에 치여 의식불명 상태가 되었다.',
     'hide image e_world_truck.png with fadeOut',
     '그런데 어째서인지 내 의식은 유령이 된것 처럼 돌아다닐 수 있게 된 상태였고, 나는 병원을 돌아다니다 목디스크로 입원한 대학생 성이름을 만났다.',
@@ -252,12 +255,15 @@ monogatari.script({
     '오전 8:52',
     '(조금 많이 늦긴 했지만.. 다행히 지각은 면했네)',
     'show character sung tired at left',
+    '',
     'sung 하아.. 아슬아슬했어..',
     'hide character sung tired',
     'show character kim right at right',
+    '',
     'kim 성이름씨. 곧 회의 시작합니다. 얼른 들어오세요.',
     'hide character kim right',
     'show character sung happy at left',
+    '',
     'sung 네 팀장님..!',
     '그녀는 서둘러 회의실로 들어갔다.',
     'hide character sung happy',
@@ -266,10 +272,13 @@ monogatari.script({
 
   ep1Scene4: [
     'show scene url("assets/scenes/office_morning.png")',
+    '',
     '(회의실에는 1팀과 2팀 사람들이 모두 모여있었다.)',
     'show character kim left at left',
+    '',
     'kim 좋은 아침입니다.',
     'hide character kim left',
+    'show character jung happy at right',
     'jung 아, 팀장님 오셨어요!',
     'kim 이쪽은 오늘부터 2팀에서 근무할 성이름씨입니다. 면접때 보신 분도 있을거에요.',
     'sung 안녕하세요! 오늘부터 출근하게된 성이름입니다. 잘부탁드립니다!',
