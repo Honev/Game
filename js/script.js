@@ -54,7 +54,9 @@ monogatari.configuration('credits', {});
 monogatari.assets('gallery', {});
 
 // Define the music used in the game.
-monogatari.assets('music', {});
+monogatari.assets('music', {
+  cute: 'cute.mp3',
+});
 
 // Define the voice files used in the game.
 monogatari.assets('voices', {});
@@ -190,7 +192,7 @@ monogatari.script({
         Warning: '이름을 입력해주세욧!',
       },
     },
-
+    'play music cute with fade 5',
     'show scene url("assets/scenes/room_morning.png")',
     '오전 8:02',
     '우당탕탕',
