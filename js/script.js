@@ -56,6 +56,7 @@ monogatari.assets('gallery', {});
 // Define the music used in the game.
 monogatari.assets('music', {
   cute: 'cute.mp3',
+  ptsd: 'ptsd.mp3',
 });
 
 // Define the voice files used in the game.
@@ -234,6 +235,7 @@ monogatari.script({
   ],
 
   ep1Scene2: [
+    'play music ptsd with volume 65 loop',
     'show scene url("assets/scenes/room_morning_memory.png")',
     '약 1년 전.',
     'show image e_world_truck.png center with fadeIn',
@@ -252,6 +254,7 @@ monogatari.script({
   ],
 
   ep1Scene3: [
+    'play music cute with volume 65 loop',
     'show scene url("assets/scenes/company_morning.png")',
     '',
     '오전 8:52',
