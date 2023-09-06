@@ -166,6 +166,7 @@ monogatari.characters({
 monogatari.script({
   // The game starts here.
   Start: [
+    'play music cute with loop',
     'show scene url("assets/scenes/sky.png")',
     'show notification Welcome',
     {
@@ -192,7 +193,6 @@ monogatari.script({
         Warning: '이름을 입력해주세욧!',
       },
     },
-    'play music cute with fade 5',
     'show scene url("assets/scenes/room_morning.png")',
     '오전 8:02',
     '우당탕탕',
