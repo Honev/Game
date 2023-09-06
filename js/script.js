@@ -166,7 +166,7 @@ monogatari.characters({
 monogatari.script({
   // The game starts here.
   Start: [
-    'play music cute with loop',
+    'play music cute with volume 65 loop',
     'show scene url("assets/scenes/sky.png")',
     'show notification Welcome',
     {
