@@ -86,7 +86,6 @@ monogatari.characters({
       normal: 'main_jhondo.png',
       sad: 'sad_jhondo.png',
       surprised: 'surprised_jhondo.png',
-      sleepy: 'sleepy_jhondo.png',
       tired: 'tired_jhondo.png',
       scream: 'scream_jhondo.png',
       happy_tired: 'happy_tired_jhondo.png',
