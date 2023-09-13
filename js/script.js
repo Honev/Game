@@ -705,7 +705,7 @@ monogatari.script({
     'hide character jh normal',
     'show scene url("assets/scenes/office_talking.png")',
     'show character sung happy with fadeIn',
-    'sung ',
+    '',
     'sung (헤헤)',
     'hide character sung happy',
     'jump ep2Scene3',
