@@ -233,7 +233,6 @@ monogatari.script({
   ],
 
   ep1Scene2: [
-    'play music ptsd with volume 65 loop',
     'show scene url("assets/scenes/room_morning_memory.png")',
     '약 1년 전.',
     'show image e_world_truck.png center with fadeIn',
@@ -252,7 +251,6 @@ monogatari.script({
   ],
 
   ep1Scene3: [
-    'play music cute with volume 65 loop',
     'show scene url("assets/scenes/company_morning.png")',
     '',
     '오전 8:52',
