@@ -94,7 +94,6 @@ monogatari.characters({
       very_surprised: 'very_surprised_jhondo.png',
     },
   },
-
   lee: {
     name: '이현우',
     color: '#4360fb',
@@ -233,6 +232,8 @@ monogatari.script({
   ],
 
   ep1Scene2: [
+    'stop music cute',
+    'play music ptsd with volume 75 loop',
     'show scene url("assets/scenes/room_morning_memory.png")',
     '약 1년 전.',
     'show image e_world_truck.png center with fadeIn',
@@ -251,6 +252,8 @@ monogatari.script({
   ],
 
   ep1Scene3: [
+    'stop music ptsd',
+    'play music cute with volume 75 loop',
     'show scene url("assets/scenes/company_morning.png")',
     '',
     '오전 8:52',
@@ -284,7 +287,6 @@ monogatari.script({
     'hide character kim left',
     'hide character jung happy',
     'hide character sung happy',
-    // '단체이지지',
     '',
     '짝짝짝',
     'show character kim left at left',
@@ -372,7 +374,7 @@ monogatari.script({
     'hide character jung normal',
     'show character uj normal at right',
     'uj 그.. 소화가 잘되는 우유 그런 느낌인거죠?',
-    'show messege Tmi1',
+    'show message Tmi1',
     'sung 네 그런거죠!',
     'hide character sung happy',
     'show character kim left at left',
@@ -503,7 +505,7 @@ monogatari.script({
     'jung 그래요? 이유가 있나요?',
     'sung 네!',
     'sung 각 분야에서 자주 쓰이는 단어는 어느 한 기업에서 독점할 수 없다고 알고있습니다. 그 분야에서 브랜드를 운영하는 사람은 누구나 그 단어를 쓸 수 있어야 하기 때문이죠.',
-    'show messege Tmi2',
+    'show message Tmi2',
     'hide character jung normal',
     'show character uj happy at right',
     'uj 설명 고마워요. 그럼 우선 메종은 킵 해두는걸로 할까요?',
@@ -691,7 +693,7 @@ monogatari.script({
     'show character jh normal at right',
     'jh 그렇죠?',
     'sung 네. 기간이 저작권은 누구나 사용할 수 있습니다.',
-    'show messege Tmi3',
+    'show message Tmi3',
     'hide character jh normal',
     'show character lee normal at right',
     'lee 그럼 문제될 일은 없겠네요.',
@@ -927,7 +929,7 @@ monogatari.script({
     '(그래서 말한거야.)',
     '(버려진 브랜드는 3년이 지난 후에 누구나 사용할 수 있거든.)',
     '(먼저 가져가는 사람이 임자가 되는거지.)',
-    'show messege Tmi4',
+    'show message Tmi4',
     'hide character sung too_tired',
     'show character sung surprised',
     'sung 뭐? 정말?',
