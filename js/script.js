@@ -166,7 +166,6 @@ monogatari.characters({
 monogatari.script({
   // The game starts here.
   Start: [
-    'play music cute with volume 65 loop',
     'show scene url("assets/scenes/sky.png")',
     'show notification Welcome',
     {
@@ -193,6 +192,7 @@ monogatari.script({
         Warning: '이름을 입력해주세욧!',
       },
     },
+    'play music cute with volume 65 loop',
     'show scene url("assets/scenes/room_morning.png")',
     '오전 8:02',
     '우당탕탕',
@@ -278,13 +278,12 @@ monogatari.script({
     'show character kim left at left',
     '',
     'kim 좋은 아침입니다.',
-    'hide character kim',
     'show character jung happy at right',
     'jung 아, 팀장님 오셨어요!',
     'kim 이쪽은 오늘부터 2팀에서 근무할 성이름씨입니다. 면접때 보신 분도 있을거에요.',
-    'show character sung happy at right',
-    'sung 안녕하세요! 오늘부터 출근하게된 성이름입니다. 잘부탁드립니다!',
     'hide character kim',
+    'show character sung happy at left',
+    'sung 안녕하세요! 오늘부터 출근하게된 성이름입니다. 잘부탁드립니다!',
     'hide character jung',
     'hide character sung',
     '',
@@ -518,7 +517,7 @@ monogatari.script({
     'show character sung happy',
     'sung ',
     'sung (힛)',
-    'hide character sung with end-fadeOut duration 2s',
+    'hide character sung',
     'jump goodEnd01',
   ],
 
@@ -573,9 +572,6 @@ monogatari.script({
     'hide character uj',
     'hide character sung',
     '',
-    '',
-    'Episode 01, Good Ending, 디자이너로서의 첫 걸음',
-    'show scene url("assets/scenes/end.png") with fadeIn',
     'jump ep2Scene1',
   ],
 
@@ -620,8 +616,8 @@ monogatari.script({
     'hide character jh',
     'show character jh normal at right',
     'jh 알겠습니다.',
-    'hide character kim left',
-    'hide character jh normal',
+    'hide character kim',
+    'hide character jh',
     '띵-',
     '(엘리베이터가 열리자 현우씨가 양손에 커피를 들고 나타났다.)',
     'show character lee normal',
@@ -631,11 +627,11 @@ monogatari.script({
     '!!!!!',
     'hide character sung',
     'show scene url("assets/scenes/end.png") with fadeIn',
-    'show scene url("assets/scenes/room_morning.png")',
+    'show scene url("assets/scenes/company_morning.png")',
     'show character sung happy',
     // '효과음',
     '그녀는 카페인이 들어가자 정신이 돌아온것같았다.',
-    'show character sung happy',
+    'hide character sung',
     'jump ep2Scene2',
   ],
 
@@ -685,7 +681,6 @@ monogatari.script({
   ],
 
   Yes5: [
-    'hide character sung',
     'show character sung normal at left',
     'sung 아무나 사용할 수 있는걸로 알고 있어요.',
     'show character jh normal at right',
@@ -714,7 +709,6 @@ monogatari.script({
   ],
 
   No5: [
-    'hide character sung',
     'show character sung normal at left',
     'sung 컨버스 측에 물어보면 되지 않을까요?',
     'show character uj normal at right',
@@ -849,10 +843,16 @@ monogatari.script({
     'end',
   ],
 
-  No6: ['sung 퇴근하고 확인해보자.', 'hide character sung', 'jump ep2Scene5'],
+  No6: [
+    'hide character sung',
+    'show character sung happy',
+    'sung 퇴근하고 확인해보자.',
+    'hide character sung',
+    'jump ep2Scene5',
+  ],
 
   ep2Scene5: [
-    'show scene url("assets/scenes/company_afternoon.png") witn fadeIn',
+    'show scene url("assets/scenes/company_afternoon.png")',
     '정신없는 하루가 지나고..',
     '퇴근시간이 꽤 지나서야 업무를 마친 그녀는 지친 얼굴로 짐을 챙겼다.',
     'show character sung happy_tired at left',
@@ -862,8 +862,9 @@ monogatari.script({
     'sung 넵! 다음주에 뵙겠습니다!',
     'hide character uj',
     'hide character sung',
-    'show scene url("assets/scenes/end.png") with fadeIn',
+    'show scene url("assets/scenes/end.png")',
     'show scene url("assets/scenes/room_night.png")',
+    '',
     '머리를 대충 말린 그녀가 책상앞에 앉았다.',
     'show character sung happy',
     'sung 하~ 이제 좀 살것같네.',
@@ -978,7 +979,10 @@ monogatari.script({
     'sung 너도',
     'hide character sung',
     'show scene url("assets/scenes/end.png") with fadeIn',
+    '',
+    '',
     'Episode 02, Good Ending, 꿈을 향해',
+    '',
     'end',
   ],
 
@@ -987,7 +991,10 @@ monogatari.script({
     'sung 웅 ㅎ',
     'hide character sung',
     'show scene url("assets/scenes/end.png") with fadeIn',
+    '',
+    '',
     'Episode 02, Good Ending, 꿈을 향해',
+    '',
     'end',
   ],
 });
