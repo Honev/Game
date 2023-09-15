@@ -66,6 +66,7 @@ monogatari.assets('voices', {});
 monogatari.assets('sounds', {
   cat: 'cat.mp3',
   cure: 'cure.mp3',
+  ev: 'elv.mp3',
 });
 
 // Define the videos used in the game.
@@ -626,6 +627,7 @@ monogatari.script({
     'jh 알겠습니다.',
     'hide character kim',
     'hide character jh',
+    'play sound ev',
     '띵-',
     '(엘리베이터가 열리자 현우씨가 양손에 커피를 들고 나타났다.)',
     'show character lee normal',
