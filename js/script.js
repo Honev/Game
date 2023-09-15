@@ -63,7 +63,10 @@ monogatari.assets('music', {
 monogatari.assets('voices', {});
 
 // Define the sounds used in the game.
-monogatari.assets('sounds', {});
+monogatari.assets('sounds', {
+  cat: 'cat.mp3',
+  cure: 'cure.mp3',
+});
 
 // Define the videos used in the game.
 monogatari.assets('videos', {});
@@ -343,12 +346,17 @@ monogatari.script({
     'show character sung happy at left',
     'sung 고양이가 좋아하는 츄르는 어떨까요?',
     'show character uj normal at right',
+    'play sound cat',
     'uj ?',
     'sung ?',
+    'hide character uj',
+    'show character jh normal at right',
     'jh 말이 안되는건 아닌데 너무 무난한것같네요.',
     'hide character sung',
     'show character sung normal at left',
     'sung 그런가요..',
+    'hide character jh',
+    'show character uj normal at right',
     'uj 처음엔 장난인줄 알았어요.',
     'hide character sung',
     'show character sung sad at left',
@@ -629,8 +637,10 @@ monogatari.script({
     'show scene url("assets/scenes/end.png") with fadeIn',
     'show scene url("assets/scenes/company_morning.png")',
     'show character sung happy',
-    // '효과음',
+    'play sound cure',
+    '',
     '그녀는 카페인이 들어가자 정신이 돌아온것같았다.',
+    '',
     'hide character sung',
     'jump ep2Scene2',
   ],
