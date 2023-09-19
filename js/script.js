@@ -55,6 +55,7 @@ monogatari.assets('gallery', {});
 
 // Define the music used in the game.
 monogatari.assets('music', {
+  class: 'class.mp3',
   cute: 'cute.mp3',
   ptsd: 'ptsd.mp3',
 });
@@ -257,7 +258,7 @@ monogatari.script({
 
   ep1Scene3: [
     'stop music ptsd',
-    'play music cute with volume 75 loop',
+    'play music class with volume 75 loop',
     'show scene url("assets/scenes/company_morning.png")',
     '',
     '오전 8:52',
