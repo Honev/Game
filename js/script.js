@@ -783,6 +783,8 @@ monogatari.script({
     'hide character kim',
     '',
     '수고하셨습니다!',
+    'stop music class',
+    'play music morning with volume 75 loop',
     'show scene url("assets/scenes/road_01.png") with fadeIn',
     '빠르게 점심을 해결하고 회사로 돌아오는 길.',
     '푹푹찌는 무더위에 늦은 점심시간이라 그런지 거리는 꽤 한산했다.',
@@ -809,6 +811,8 @@ monogatari.script({
   ],
 
   ep2Scene4: [
+    'stop music morning',
+    'play music class with volume 75 loop',
     'show scene url("assets/scenes/office_morning.png")',
     '',
     '배부른 상황에 더운 곳에 있다가 시원한 곳에 오면 잠이 오기 마련이다.',
@@ -876,6 +880,8 @@ monogatari.script({
   ],
 
   ep2Scene5: [
+    'stop music class',
+    'play music afternoon with volume 75 loop',
     'show scene url("assets/scenes/company_afternoon.png")',
     '정신없는 하루가 지나고..',
     '퇴근시간이 꽤 지나서야 업무를 마친 그녀는 지친 얼굴로 짐을 챙겼다.',
