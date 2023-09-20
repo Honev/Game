@@ -55,9 +55,11 @@ monogatari.assets('gallery', {});
 
 // Define the music used in the game.
 monogatari.assets('music', {
+  afternoon: 'afternoon.mp3',
   class: 'class.mp3',
   cute: 'cute.mp3',
   ptsd: 'ptsd.mp3',
+  morning: 'morning.mp3',
 });
 
 // Define the voice files used in the game.
@@ -197,7 +199,7 @@ monogatari.script({
         Warning: '이름을 입력해주세욧!',
       },
     },
-    'play music cute with volume 65 loop',
+    'play music morning with volume 65 loop',
     'show scene url("assets/scenes/room_morning.png")',
     '오전 8:02',
     '우당탕탕',
@@ -237,7 +239,7 @@ monogatari.script({
   ],
 
   ep1Scene2: [
-    'stop music cute',
+    'stop music morning',
     'play music ptsd with volume 75 loop',
     'show scene url("assets/scenes/room_morning_memory.png")',
     '약 1년 전.',
@@ -366,8 +368,8 @@ monogatari.script({
     'hide character uj',
     'show character kim right at right',
     'kim 아이디어잖아요? 괜찮아요. 계속 진행해보죠.',
-    'hide character kim with end-fadeOut duration 2s',
-    'hide character sung with end-fadeOut duration 2s',
+    'hide character kim',
+    'hide character sung',
     'jump normalEnd01',
   ],
 
@@ -541,6 +543,8 @@ monogatari.script({
     'hide character kim',
     '',
     '수고하셨습니다..',
+    'stop music class',
+    'play music ptsd with volume 75 loop',
     'show scene url("assets/scenes/company_afternoon.png")',
     '',
     '정신없이 하루가 지나갔다.',
@@ -548,6 +552,7 @@ monogatari.script({
     'show character sung too_tired with fadeIn',
     '디자인이 나랑 맞는걸까..',
     'hide character sung',
+    'stop music ptsd',
     '',
     '',
     'Episode 01, Normal Ending, 행복 끝 고생 시작',
@@ -570,6 +575,8 @@ monogatari.script({
     'hide character uj',
     'hide character sung',
     '',
+    'stop music class',
+    'play music afternoon with volume 75 loop',
     'show scene url("assets/scenes/office room_afternoon.png") with fadeIn',
     '',
     'show character uj happy at right',
@@ -586,6 +593,8 @@ monogatari.script({
   ],
 
   ep2Scene1: [
+    'stop music class',
+    'play music cute with volume 75 loop',
     'show scene url("assets/scenes/room_morning.png")',
     '',
     '며칠 뒤',
@@ -649,6 +658,8 @@ monogatari.script({
   ],
 
   ep2Scene2: [
+    'stop music cute',
+    'play music class with volume 75 loop',
     'show scene url("assets/scenes/office_morning.png")',
     '',
     '잠시 후',
