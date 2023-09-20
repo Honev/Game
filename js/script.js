@@ -541,7 +541,7 @@ monogatari.script({
     'hide character kim',
     '',
     '수고하셨습니다..',
-    'show scene url("assets/scenes/company_afternoon.png")with fadeIn duration 5s',
+    'show scene url("assets/scenes/company_afternoon.png")',
     '',
     '정신없이 하루가 지나갔다.',
     '이윽고 업무를 마친 그녀가 얼빠진 표정으로 사무실에서 걸어나왔다.',
