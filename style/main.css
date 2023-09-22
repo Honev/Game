@@ -58,7 +58,6 @@ button:hover {
 
 /* 로드 버튼 */
 [data-screen='main'] button[string='Start'] {
-  /* 사라지는 마술 */
 }
 /* 로드 버튼 */
 [data-screen='main'] button[string='Load'] {
@@ -66,7 +65,6 @@ button:hover {
   display: none;
 }
 [data-screen='main'] button[string='Settings'] {
-  /* 사라지는 마술 */
 }
 /* 헬프버튼 */
 [data-screen='main'] button[string='Help'] {
