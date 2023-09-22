@@ -16,7 +16,7 @@ monogatari.settings({
   // The name of your game, this will be used to store all the data so once
   // you've released a game using one name, it shouldn't change. Please use the
   // Version Setting to indicate a new release of your game!
-  Name: '나 혼자만 지적재산권 마음대로 사용하기',
+  Name: 'My Visual Novel',
 
   // The version of your game in semantic versioning (https://semver.org/).
   Version: '0.1.0',
@@ -149,7 +149,7 @@ monogatari.preferences({
   Resolution: '800x600',
 
   // Speed at which dialog text will appear
-  TextSpeed: 20,
+  TextSpeed: 24,
 
   // Speed at which the Auto Play feature will show the next statement
   // It is measured in seconds and starts counting after the text is
