@@ -49,7 +49,7 @@ button:hover {
 [data-screen='main'] [data-component='main-menu'] {
   align-self: center;
   justify-self: end;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 }
 
 /* Main Menu Buttons Styling */
@@ -57,9 +57,16 @@ button:hover {
 }
 
 /* 로드 버튼 */
+[data-screen='main'] button[string='Start'] {
+  /* 사라지는 마술 */
+}
+/* 로드 버튼 */
 [data-screen='main'] button[string='Load'] {
   /* 사라지는 마술 */
   display: none;
+}
+[data-screen='main'] button[string='Settings'] {
+  /* 사라지는 마술 */
 }
 /* 헬프버튼 */
 [data-screen='main'] button[string='Help'] {
