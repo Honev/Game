@@ -489,7 +489,6 @@ monogatari.script({
   ],
 
   Yes4: [
-    'hide character sung',
     'show character sung happy at left',
     'sung 저작권에 문제가 되지 않을까요?',
     'uj 메종은 프랑스어로 집이라는 뜻인데 오트쿠튀르 매장을 의미하기도 해요.',
@@ -508,7 +507,6 @@ monogatari.script({
   ],
 
   No4: [
-    'hide character sung',
     'show character sung smile at left',
     'sung 저작권 관련해서는 문제가 되지 않는걸로 알고있습니다.',
     'hide character uj',
