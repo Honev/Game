@@ -587,11 +587,11 @@ monogatari.script({
     'hide character uj',
     'hide character sung',
     '',
+    'stop music afternoon',
     'jump ep2Scene1',
   ],
 
   ep2Scene1: [
-    'stop music afternoon',
     'play music cute with volume 75 loop',
     'show scene url("assets/scenes/room_morning.png")',
     '',
