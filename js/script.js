@@ -591,7 +591,7 @@ monogatari.script({
   ],
 
   ep2Scene1: [
-    'stop music class',
+    'stop music afternoon',
     'play music cute with volume 75 loop',
     'show scene url("assets/scenes/room_morning.png")',
     '',
@@ -611,6 +611,8 @@ monogatari.script({
     'sung ...',
     'sung ...너 나빠',
     'hide character sung',
+    'stop music cute',
+    'play music class with volume 75 loop',
     'show scene url("assets/scenes/company_morning.png")',
     '',
     '오전 8:43',
@@ -656,8 +658,6 @@ monogatari.script({
   ],
 
   ep2Scene2: [
-    'stop music cute',
-    'play music class with volume 75 loop',
     'show scene url("assets/scenes/office_morning.png")',
     '',
     '잠시 후',
