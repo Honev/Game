@@ -139,7 +139,7 @@ monogatari.characters({
   },
   sm: {
     name: '최소민',
-    color: '#fd91f9',
+    color: '#FF7A50',
     directory: 'somin',
     sprites: {
       angry: 'hot_somin.png',
