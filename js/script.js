@@ -498,8 +498,6 @@ monogatari.script({
     'jh 어감도 괜찮고 고급 느낌을 주면서 가격경쟁력을 갖춘다면 다른 브랜드에 비해 빠르게 주목받을 수 있을것같네요.',
     'sung 저도 좋은것같습니다.',
     'show scene url("assets/scenes/office_talking.png")',
-    'hide character jh',
-    'hide character sung',
     'show character sung sad',
     'sung ...',
     'sung (조금 더 신중해야겠어..)',
@@ -554,7 +552,6 @@ monogatari.script({
     '',
     '',
     'Episode 01, Normal Ending, 행복 끝 고생 시작',
-    'show scene url("assets/scenes/end.png") with fadeIn',
     'end',
   ],
 
@@ -865,7 +862,6 @@ monogatari.script({
     '',
     '',
     'Episode 02, Normal Ending, 고단한 하루',
-    'show scene url("assets/scenes/end.png") with fadeIn',
     'end',
   ],
 
